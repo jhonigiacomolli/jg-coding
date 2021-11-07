@@ -2,6 +2,7 @@
     "extends": "./.eslintrc-default.json",
     "plugins": [
       "only-warn",
-      "@typescript-eslint"
+      "@typescript-eslint",
+      "babel-plugin-styled-components"
     ]
 }
