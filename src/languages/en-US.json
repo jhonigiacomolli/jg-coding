@@ -1,5 +1,14 @@
 {
     "language": "Language",
     "langOption1": "English",
-    "langOption2": "Portuguese"
+    "langOption2": "Portuguese",
+    "menuOption1": "Home",
+    "menuOption2": "Profile",
+    "menuOption3": "Works",
+    "menuOption4": "Skills",
+    "menuOption5": "Contact",
+    "profilePhrase1": "Hi, my name is",
+    "profilePhrase2": "Jhoni Giacomolli",
+    "profilePhrase3": "I am an web developer and designer, working since 2018 with web sites building and make your dreams in reality",
+    "profileButton": "Contact me"
 }

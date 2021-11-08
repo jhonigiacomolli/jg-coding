@@ -1,7 +1,7 @@
 /* global HTMLSelectElement */
-import styled, { css } from 'styled-components/macro'
 import { ChangeEvent, ReactElement, useEffect, useState } from 'react'
 import { useLanguageContext } from 'languages/context'
+import styled, { css } from 'styled-components/macro'
 import { Option, Select } from './styled-select'
 import { Languages } from 'languages/@types'
 
@@ -36,6 +36,7 @@ export const Topbar = (): ReactElement => {
 }
 
 const Container = styled.div`${({ theme }) => css`
+  grid-area: topbar;
   background: ${theme.colors.primary90};
 `}`
 

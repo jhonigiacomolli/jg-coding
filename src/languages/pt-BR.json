@@ -1,5 +1,14 @@
 {
     "language": "Idioma",
     "langOption1": "Inglês",
-    "langOption2": "Português"
+    "langOption2": "Português",
+    "menuOption1": "Página Inicial",
+    "menuOption2": "Perfil",
+    "menuOption3": "Trabalhos",
+    "menuOption4": "Habilidades",
+    "menuOption5": "Contato",
+    "profilePhrase1": "Ola, meu nome é",
+    "profilePhrase2": "Jhoni Giacomolli",
+    "profilePhrase3": "Eu sou desenvolvedor web e designer, trabalhando com construção de websites e tornando seus sonhos realidade desde 2018",
+    "profileButton": "Entre em contato"
 }
