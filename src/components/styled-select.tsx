@@ -8,7 +8,7 @@ export const Select = styled.select`${({ theme }) => css`
   border-radius: 10px;
   box-shadow: none;
   color: ${theme.colors.text90};
-  background: ${theme.colors.primary80};
+  background: ${theme.colors.primary70};
   &:focus-visible {
     outline: none !important  ;
   }

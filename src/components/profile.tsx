@@ -56,7 +56,7 @@ const Container = styled.section`${({ theme }) => css`
   height: 1200px;
   background-size: cover !important;
   background-position: top;
-  background: linear-gradient(0deg, ${theme.colors.primary100alpha}, ${theme.colors.primary80alpha}), url('/src/assets/slide.jpg');
+  background: linear-gradient(0deg, ${theme.colors.primary90alpha}, ${theme.colors.primary70alpha}), url('/src/assets/slide.jpg');
 `}`
 const Content = styled.div`
   position: absolute;

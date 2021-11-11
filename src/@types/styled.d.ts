@@ -4,10 +4,11 @@ declare module 'styled-components' {
             detach100: string
             detach90: string
             primary100: string
-            primary100alpha: string
+            primary90alpha: string
             primary90: string
             primary80: string
-            primary80alpha: string
+            primary70alpha: string
+            primary70: string
             text100: string
             text90: string
             text80: string

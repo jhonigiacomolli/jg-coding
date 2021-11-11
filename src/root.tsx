@@ -34,6 +34,7 @@ const GlobalStyle = createGlobalStyle`
             sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        background: ${({ theme }) => theme.colors.primary70};
     }
 `
 export { Root }
