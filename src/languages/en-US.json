@@ -10,5 +10,8 @@
     "profilePhrase1": "Hi, my name is",
     "profilePhrase2": "Jhoni Giacomolli",
     "profilePhrase3": "I am an web developer and designer, working since 2018 with web sites building and make your dreams in reality",
-    "profileButton": "Contact me"
+    "profileButton": "Contact me",
+    "titleWorks": "My Works",
+    "titleSkills": "My Skills",
+    "titleContact": "More Contacts"
 }

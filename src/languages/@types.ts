@@ -13,4 +13,7 @@ export type LanguageData = {
     profilePhrase2: string
     profilePhrase3: string
     profileButton: string
+    titleWorks: string
+    titleSkills: string
+    titleContact: string
 }

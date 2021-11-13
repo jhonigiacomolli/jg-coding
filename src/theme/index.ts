@@ -12,11 +12,13 @@ export const theme: DefaultTheme = {
     primary70alpha: '#292A2ED9',
     text100: '#FFFFFF',
     text90: '#E9F0F3',
-    text80: '#989898',
+    text80: '#9B9B9B',
     text10: '#0F1115',
   },
   sizes: {
     boxed: '1240px',
+    title: '4.5rem',
+    subtitle: '3.3rem',
     icons: {
       width: '35px',
       height: '35px',
