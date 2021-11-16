@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Button = styled.button`${({ theme }) => css`
     min-width: 250px;
-    margin: 10px 0;
+    margin: 20px auto;
     padding: 10px;
     border: none;
     border-radius: 8px;

@@ -19,8 +19,8 @@ This is one project to display my skills with React.js, Typescript and Styled Co
 
 <br>
 
-### ![Project preview](src/assets/react-icon.svg) React.JS
-### ![Project preview](src/assets/ts-icon.svg) Typescript
-### ![Project preview](src/assets/sc-icon.png) Styled Components
-### ![Project preview](src/assets/html-icon.svg) HTML
-### ![Project preview](src/assets/css-icon.svg) CSS
+### ![Project preview](src/assets/icons/react-icon.svg) React.JS
+### ![Project preview](src/assets/icons/ts-icon.svg) Typescript
+### ![Project preview](src/assets/icons/sc-icon.png) Styled Components
+### ![Project preview](src/assets/icons/html-icon.svg) HTML
+### ![Project preview](src/assets/icons/css-icon.svg) CSS

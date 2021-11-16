@@ -1,13 +1,13 @@
 /* global HTMLAnchorElement */
 import { HTMLProps, ReactElement } from 'react'
 import styled, { css } from 'styled-components/macro'
-import Linkedin from 'assets/linkedin-icon.svg'
-import Github from 'assets/github-icon.svg'
-import Mail from 'assets/contact-icon.svg'
-import Telegram from 'assets/telegram-icon.svg'
-import Discord from 'assets/discord-icon.svg'
-import Whatsapp from 'assets/whatsapp-icon.svg'
-import Product from 'assets/product-icon.svg'
+import Linkedin from 'assets/icons/linkedin-icon.svg'
+import Github from 'assets/icons/github-icon.svg'
+import Mail from 'assets/icons/contact-icon.svg'
+import Telegram from 'assets/icons/telegram-icon.svg'
+import Discord from 'assets/icons/discord-icon.svg'
+import Whatsapp from 'assets/icons/whatsapp-icon.svg'
+import Product from 'assets/icons/product-icon.svg'
 
 type LinkProps = HTMLProps<HTMLAnchorElement> & {
     text: string

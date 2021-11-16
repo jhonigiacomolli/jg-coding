@@ -4,6 +4,8 @@ import styled, { css } from 'styled-components/macro'
 
 type SvgProps = SVGProps<SVGSVGElement> & {
     position?: 'left' | 'right'
+    overlap?: 'top' | 'bottom' | 'none'
+    kind?: 'primary' | 'secondary'
 }
 
 const SVG = ({ ...rest }: SvgProps): ReactElement => {
@@ -27,11 +29,12 @@ const SVG = ({ ...rest }: SvgProps): ReactElement => {
   )
 }
 
-export const Divisor = styled(SVG)`${({ theme, position = 'left' }) => css`
-  margin-top: calc(-100vw * 0.36);
+export const Divisor = styled(SVG)`${({ theme, position = 'left', kind = 'primary', overlap = 'none' }) => css`
+  margin-top: ${overlap === 'top' ? 'calc(-100vw * 0.36)' : '0px'};
+  margin-bottom: ${overlap === 'bottom' ? 'calc(-100vw * 0.36)' : '0px'};
   transform: rotateY(${position === 'left' ? '0deg' : '180deg'});
   .divisor-background, .divisor-detail-1 {
-      fill: ${theme.colors.primary70};
+      fill: ${kind === 'primary' ? theme.colors.primary70 : theme.colors.primary80};
   }
   .divisor-detach-primary {
       stop-color: ${theme.colors.detach100};

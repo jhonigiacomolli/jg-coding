@@ -1,15 +1,16 @@
 /* global SVGSVGElement */
 import { ReactElement, SVGProps, useEffect, useState } from 'react'
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components/macro'
 
 type TitleDecoratedProps = & {
     text?: string
     icon?: ReactElement
     width?: number
     className?: string
+    position?: 'right' | 'left'
 }
 
-export const TitleDecorated = ({ text, icon, width = 500, className }: TitleDecoratedProps):ReactElement => {
+export const TitleDecorated = ({ text, icon, width = 500, className, position = 'left' }: TitleDecoratedProps):ReactElement => {
   const [title, setTitle] = useState('')
   const [subtitle, setSubtitle] = useState('')
 
@@ -22,7 +23,6 @@ export const TitleDecorated = ({ text, icon, width = 500, className }: TitleDeco
             : textArr[0]
         )
       : ''
-    console.log(textArr.slice(1, textArr.length))
 
     setTitle(textTitle)
     setSubtitle(textArr.length > 1 ? textArr[0] : '')
@@ -30,9 +30,11 @@ export const TitleDecorated = ({ text, icon, width = 500, className }: TitleDeco
 
   return (
     <Container className={className} width={width}>
-      <Decoration width={width} />
-      <Content>
-        {icon}
+      <Decoration width={width} position={position} />
+      <Content isIcon={icon !== undefined}>
+        <Icon>
+          {icon}
+        </Icon>
         <TextContent>
           <Subtitle>
             {subtitle}
@@ -51,20 +53,25 @@ const Container = styled.div<{ width?: number }>`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: -250px auto 0 auto;
+    margin: -250px auto 250px auto;
     position: relative;
     width: ${({ width }) => `${width}px`};
     z-index: 19;
 `
-const Content = styled.div`
+const Content = styled.div<{ isIcon?: boolean }>`${({ isIcon }) => css`
     width: 100%;
     display: flex;  
+    position: relative;
+    z-index: 10;
     align-items: flex-end;
-    justify-content: flex-start;
-    margin: -200px 0 0 0;
+    justify-content: ${isIcon ? 'flex-start' : 'center'};
+    margin:  ${isIcon ? '-200px 0 0 0' : '-115px 0 0 0'};
     padding: 0 10px;
     gap: 20px;
+`}`
+const Icon = styled.div`    
 `
+
 const TextContent = styled.div`
   display: flex;  
   flex-direction: column;
@@ -106,7 +113,12 @@ const SVG = ({ ...rest }: SVGProps<SVGSVGElement>):ReactElement => {
   )
 }
 
-const Decoration = styled(SVG)<SVGProps<SVGSVGElement>>`${({ theme }) => css`
+type DecorationProps = SVGProps<SVGSVGElement> & {
+  position?: 'right' | 'left'
+}
+const Decoration = styled(SVG)<DecorationProps>`${({ theme, position }) => css`
+  transform: rotateY(${position === 'left' ? '0deg' : '180deg'});
+  z-index: 0;
   .title-background-primary {
       stop-color: ${theme.colors.primary100};
   }
