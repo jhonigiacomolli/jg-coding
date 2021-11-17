@@ -6,6 +6,7 @@ import { TitleDecorated } from 'components/title/title-decorated'
 import { useLanguageContext } from 'languages/context'
 import { Avatar } from 'components/avatar'
 import { WorksDetach } from 'components/works/works-in-detach'
+import { SkillsDetach } from 'components/skills/skills-in-detach'
 
 export function App (): ReactElement {
   const { data } = useLanguageContext()
@@ -18,6 +19,7 @@ export function App (): ReactElement {
       <WorksDetach numberItens={3} />
       <Divisor position='right' kind='secondary' />
       <TitleDecorated text={data.titleSkills} width={350} position='right' />
+      <SkillsDetach />
     </>
   )
 }

@@ -53,7 +53,7 @@ const Container = styled.div<{ width?: number }>`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: -250px auto 250px auto;
+    margin: -250px auto 130px auto;
     position: relative;
     width: ${({ width }) => `${width}px`};
     z-index: 19;
@@ -65,11 +65,12 @@ const Content = styled.div<{ isIcon?: boolean }>`${({ isIcon }) => css`
     z-index: 10;
     align-items: flex-end;
     justify-content: ${isIcon ? 'flex-start' : 'center'};
-    margin:  ${isIcon ? '-200px 0 0 0' : '-115px 0 0 0'};
+    margin:  ${isIcon ? '-215px 0 0 0' : '-105px 0 0 0'};
     padding: 0 10px;
     gap: 20px;
 `}`
-const Icon = styled.div`    
+const Icon = styled.div`
+  margin: 12px 0 -12px 0  ;
 `
 
 const TextContent = styled.div`
@@ -78,6 +79,7 @@ const TextContent = styled.div`
   align-items: flex-start;
   justify-content: center;
   margin-bottom: 15px;
+  margin-left: -30px;
 `
 
 const Title = styled.h1`${({ theme }) => css`

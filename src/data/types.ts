@@ -9,3 +9,9 @@ export type WorksProps = {
     image: string
     type: DevicesProps
 }
+
+export type SkillsProps = {
+    icon: string
+    title: string
+    description: string
+}

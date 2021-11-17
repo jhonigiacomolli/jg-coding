@@ -1,0 +1,36 @@
+import { ReactElement } from 'react'
+import SkillsData from 'data/skills.json'
+import { useLanguageContext } from 'languages/context'
+import { Skill } from './skill'
+import styled, { css } from 'styled-components'
+
+export const SkillsDetach = ():ReactElement => {
+  const { lang } = useLanguageContext()
+  return (
+    <Container>
+      <Content>
+        {
+                    SkillsData[lang].map(skill => (
+                      <Skill key={skill.title} data={skill} />
+                    ))
+                }
+      </Content>
+    </Container>
+  )
+}
+
+const Container = styled.section`${({ theme }) => css`
+    background: ${theme.colors.primary80};
+`}`
+
+const Content = styled.div`${({ theme }) => css`
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    max-width: ${theme.sizes.boxed};    
+    margin: 0 auto;
+    gap: 20px;
+    padding: 100px 30px;
+    box-sizing: border-box;
+`}`

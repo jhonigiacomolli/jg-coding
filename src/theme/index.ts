@@ -17,8 +17,8 @@ export const theme: DefaultTheme = {
   },
   sizes: {
     boxed: '1240px',
-    title: '4.5rem',
-    subtitle: '3.3rem',
+    title: '3.5rem',
+    subtitle: '2.5rem',
     icons: {
       width: '35px',
       height: '35px',

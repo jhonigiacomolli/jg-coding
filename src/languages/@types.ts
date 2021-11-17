@@ -16,4 +16,5 @@ export type LanguageData = {
     titleWorks: string
     titleSkills: string
     titleContact: string
+    worksButton: string
 }
