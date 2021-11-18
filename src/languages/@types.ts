@@ -17,4 +17,11 @@ export type LanguageData = {
     titleSkills: string
     titleContact: string
     worksButton: string
+    contactFormTitle: string
+    contactInputName: string
+    contactInputEmail: string
+    contactInputPhone: string
+    contactInputSubject: string
+    contactInputMessage: string
+    contactButton: string
 }

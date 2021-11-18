@@ -21,6 +21,7 @@ export const SkillsDetach = ():ReactElement => {
 
 const Container = styled.section`${({ theme }) => css`
     background: ${theme.colors.primary80};
+    padding: 50px 0 400px 0;
 `}`
 
 const Content = styled.div`${({ theme }) => css`

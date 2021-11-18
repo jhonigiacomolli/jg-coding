@@ -19,6 +19,7 @@ export const theme: DefaultTheme = {
     boxed: '1240px',
     title: '3.5rem',
     subtitle: '2.5rem',
+    inputHeight: '5rem',
     icons: {
       width: '35px',
       height: '35px',

@@ -7,6 +7,8 @@ import { useLanguageContext } from 'languages/context'
 import { Avatar } from 'components/avatar'
 import { WorksDetach } from 'components/works/works-in-detach'
 import { SkillsDetach } from 'components/skills/skills-in-detach'
+import { DivisorWave } from 'components/divisors/divisor-wave'
+import { Foooter } from 'components/footer'
 
 export function App (): ReactElement {
   const { data } = useLanguageContext()
@@ -20,6 +22,8 @@ export function App (): ReactElement {
       <Divisor position='right' kind='secondary' />
       <TitleDecorated text={data.titleSkills} width={350} position='right' />
       <SkillsDetach />
+      <DivisorWave overlap="both" />
+      <Foooter />
     </>
   )
 }

@@ -14,5 +14,12 @@
     "titleWorks": "My Works",
     "titleSkills": "My Skills",
     "titleContact": "More Contacts",
-    "worksButton": "See more"
+    "worksButton": "See more",
+    "contactFormTitle": "Send me a message",
+    "contactInputName": "Your name",
+    "contactInputEmail": "Your e-mail",
+    "contactInputPhone": "Your phone",
+    "contactInputSubject": "Subject",
+    "contactInputMessage": "Message",
+    "contactButton": "Send"
 }

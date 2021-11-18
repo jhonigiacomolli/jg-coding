@@ -18,6 +18,7 @@ declare module 'styled-components' {
             boxed: string
             title: string
             subtitle: string
+            inputHeight: string
             icons: {
                 width: string
                 height: string

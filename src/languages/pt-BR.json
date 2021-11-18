@@ -14,5 +14,12 @@
     "titleWorks": "Meus Trabalhos",
     "titleSkills": "Minhas Habilidades",
     "titleContact": "Mais Contatos",
-    "worksButton": "Veja mais"
+    "worksButton": "Veja mais",
+    "contactFormTitle": "Envie-me uma mensagem",
+    "contactInputName": "Seu nome",
+    "contactInputEmail": "Seu e-mail",
+    "contactInputPhone": "Seu telefone",
+    "contactInputSubject": "Assunto",
+    "contactInputMessage": "Mensagem",
+    "contactButton": "Enviar"
 }
