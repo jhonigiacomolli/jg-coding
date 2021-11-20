@@ -19,7 +19,7 @@ export const Link = ({ text, icon = 'product', href, target, rel }: LinkProps): 
     github: Github,
     mail: Mail,
     telegram: Telegram,
-    discrod: Discord,
+    discord: Discord,
     whatsapp: Whatsapp,
     product: Product,
   }
@@ -32,15 +32,18 @@ export const Link = ({ text, icon = 'product', href, target, rel }: LinkProps): 
 }
 
 const Container = styled.a`${({ theme }) => css`
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin: 10px 0;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 2rem;
-    font-weight: 100;
-    font-family: ${theme.fonts.secondary};
-    color: ${theme.colors.text100};
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 10px 0;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 100;
+  font-family: ${theme.fonts.secondary};
+  color: ${theme.colors.text100};
 `}`
-const Icon = styled.img``
+const Icon = styled.img`
+  width: 35px;
+  height: 35px;
+`

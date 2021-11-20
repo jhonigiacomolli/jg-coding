@@ -22,7 +22,7 @@ export function App (): ReactElement {
       <Divisor position='right' kind='secondary' />
       <TitleDecorated text={data.titleSkills} width={350} position='right' />
       <SkillsDetach />
-      <DivisorWave overlap="both" />
+      <DivisorWave overlap='both' />
       <Foooter />
     </>
   )

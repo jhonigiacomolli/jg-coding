@@ -32,6 +32,6 @@ const Content = styled.div`${({ theme }) => css`
     max-width: ${theme.sizes.boxed};    
     margin: 0 auto;
     gap: 20px;
-    padding: 100px 30px;
+    padding: 50px 30px 170px 30px;
     box-sizing: border-box;
 `}`
