@@ -9,6 +9,7 @@ import { WorksDetach } from 'components/works/works-in-detach'
 import { SkillsDetach } from 'components/skills/skills-in-detach'
 import { DivisorWave } from 'components/divisors/divisor-wave'
 import { Foooter } from 'components/footer'
+import { Copyright } from 'components/copyright'
 
 export function App (): ReactElement {
   const { data } = useLanguageContext()
@@ -24,6 +25,7 @@ export function App (): ReactElement {
       <SkillsDetach />
       <DivisorWave overlap='both' />
       <Foooter />
+      <Copyright />
     </>
   )
 }

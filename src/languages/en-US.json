@@ -21,5 +21,6 @@
     "contactInputPhone": "Your phone",
     "contactInputSubject": "Subject",
     "contactInputMessage": "Message",
-    "contactButton": "Send"
+    "contactButton": "Send",
+    "copyrightMessage": "Copyright 2021 - All rights reserved - developed by"
 }

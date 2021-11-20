@@ -24,4 +24,5 @@ export type LanguageData = {
     contactInputSubject: string
     contactInputMessage: string
     contactButton: string
+    copyrightMessage: string
 }
