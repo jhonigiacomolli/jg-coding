@@ -3,124 +3,124 @@
         {
             "title": "HTML",
             "description": "Hyper text markup language, constructing websites with focus in semanthic structures and acessibility.",
-            "icon": "./src/assets/icons/html-icon.svg"
+            "icon": "/public/icons/html-icon.svg"
         },
         {
             "title": "CSS",
             "description": "Styling language to web pages, simple way to turn a simple html page into a work of art.",
-            "icon": "./src/assets/icons/css-icon.svg"
+            "icon": "/public/icons/css-icon.svg"
         },
         {
             "title": "Javascript",
             "description": "Imterpreted programming language, weak typing and extremely dynamic, adding interactivity to web pages",
-            "icon": "./src/assets/icons/js-icon.svg"
+            "icon": "/public/icons/js-icon.svg"
         },
         {
             "title": "Typescript",
             "description": "Language programming developed by Microsoft as a superset for Javascript, adding static typing to the language.",
-            "icon": "./src/assets/icons/ts-icon.svg"
+            "icon": "/public/icons/ts-icon.svg"
         },
         {
             "title": "React.Js",
             "description": "Open source javascript library maintened by Facebook, has as main objective the development of user interfaces.",
-            "icon": "./src/assets/icons/react-icon.svg"
+            "icon": "/public/icons/react-icon.svg"
         },
         {
             "title": "Next.Js",
             "description": "It is a framework for the purpose of extends the functionalty of ReactJs, introducing server side rendering, SEO optimization and muh more.",
-            "icon": "./src/assets/icons/next-icon.svg"
+            "icon": "/public/icons/next-icon.svg"
         },
         {
             "title": "Sass",
             "description": "CSS preprocessor, witch alow writing nested styles making optimized code and better organized.",
-            "icon": "./src/assets/icons/sass-icon.svg"
+            "icon": "/public/icons/sass-icon.svg"
         },
         {
             "title": "Styled Components",
             "description": "An alternative to writing styles, also know as css-in-js, alows direct interaction between javascript and page style.",
-            "icon": "./src/assets/icons/sc-icon.png"
+            "icon": "/public/icons/sc-icon.png"
         },
         {
             "title": "PHP",
             "description": "Interpreted and dynamic backend language, which can also generate files to displayed in web directly from server side.",
-            "icon": "./src/assets/icons/php-icon.svg"
+            "icon": "/public/icons/php-icon.svg"
         },
         {
             "title": "C#",
             "description": "Strong-type multiparadigm language develped by Microsoft as part of the .Net plataform.",
-            "icon": "./src/assets/icons/csharp-icon.svg"
+            "icon": "/public/icons/csharp-icon.svg"
         },
         {
             "title": "Wordpress",
             "description": "One of the most used content management system of the world, open source and based in PHP and MySQL.",
-            "icon": "./src/assets/icons/wordpress-icon.svg"
+            "icon": "/public/icons/wordpress-icon.svg"
         },
         {
             "title": "Restfull API",
             "description": "Software architecture style, witch defines a set of constrains to be used when creating web services.",
-            "icon": "./src/assets/icons/api-icon.svg"
+            "icon": "/public/icons/api-icon.svg"
         }
     ],
     "pt-BR": [
         {
             "title": "HTML",
             "description": "Linguagem de marcação de hipertexto, construção de sites com foco em estruturas semânticas e acessibilidade.",
-            "icon": "./src/assets/icons/html-icon.svg"
+            "icon": "/public/icons/html-icon.svg"
         },
         {
             "title": "CSS",
             "description": "Linguagem de estilização para páginas da web, uma maneira simples de transformar uma página html simples em uma obra de arte.",
-            "icon": "./src/assets/icons/css-icon.svg"
+            "icon": "/public/icons/css-icon.svg"
         },
         {
             "title": "Javascript",
             "description": "Imterpreted programming language, weak typing and extremely dynamic, adding interactivity to web pages.Linguagem de programação interpretada, tipagem fraca e extremamente dinâmica, agregando interatividade às páginas web.",
-            "icon": "./src/assets/icons/js-icon.svg"
+            "icon": "/public/icons/js-icon.svg"
         },
         {
             "title": "Typescript",
             "description": "Linguagem de programação desenvolvida pela Microsoft como um superconjunto para Javascript, adicionando tipagem estática à linguagem.",
-            "icon": "./src/assets/icons/ts-icon.svg"
+            "icon": "/public/icons/ts-icon.svg"
         },
         {
             "title": "React.Js",
             "description": "Biblioteca javascript de código aberto mantida pelo Facebook, tem como objetivo principal o desenvolvimento de interfaces de usuário.",
-            "icon": "./src/assets/icons/react-icon.svg"
+            "icon": "/public/icons/react-icon.svg"
         },
         {
             "title": "Next.Js",
             "description": "É um framework com o propósito de estender a funcionalidade do ReactJs, introduzindo renderização do lado do servidor, otimização de SEO e muito mais.",
-            "icon": "./src/assets/icons/next-icon.svg"
+            "icon": "/public/icons/next-icon.svg"
         },
         {
             "title": "Sass",
             "description": "Pré-processador CSS, que permite escrever estilos aninhados tornando o código otimizado e mais organizado.",
-            "icon": "./src/assets/icons/sass-icon.svg"
+            "icon": "/public/icons/sass-icon.svg"
         },
         {
             "title": "Styled Components",
             "description": "Uma alternativa aos estilos de escrita, também conhecido como css-in-js, permite a interação direta entre javascript e estilo de página.",
-            "icon": "./src/assets/icons/sc-icon.png"
+            "icon": "/public/icons/sc-icon.png"
         },
         {
             "title": "PHP",
             "description": "Linguagem de back-end interpretada e dinâmica, que também pode gerar arquivos para serem exibidos na web diretamente do lado do servidor.",
-            "icon": "./src/assets/icons/php-icon.svg"
+            "icon": "/public/icons/php-icon.svg"
         },
         {
             "title": "C#",
             "description": "Linguagem multiparadigma de tipagem forte desenvolvida pela Microsoft como parte da plataforma .Net.",
-            "icon": "./src/assets/icons/csharp-icon.svg"
+            "icon": "/public/icons/csharp-icon.svg"
         },
         {
             "title": "Wordpress",
             "description": "Um dos sistemas de gerenciamento de conteúdo mais usados ​​do mundo, de código aberto e baseado em PHP e MySQL.",
-            "icon": "./src/assets/icons/wordpress-icon.svg"
+            "icon": "/public/icons/wordpress-icon.svg"
         },
         {
             "title": "Restfull API",
             "description": "Estilo de arquitetura de software, que define um conjunto de restrições a serem utilizadas na criação de serviços web.",
-            "icon": "./src/assets/icons/api-icon.svg"
+            "icon": "/public/icons/api-icon.svg"
         }
     ]
 }
