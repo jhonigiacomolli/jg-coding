@@ -2,6 +2,7 @@ declare module 'styled-components' {
     export interface DefaultTheme {
         colors: {
             detach100: string
+            detach100Alpha: string
             detach90: string
             primary100: string
             primary90alpha: string

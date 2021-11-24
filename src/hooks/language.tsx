@@ -1,5 +1,5 @@
 import { createContext, ReactElement, useContext, useEffect, useState } from 'react'
-import { LanguageData, Languages } from './@types'
+import { LanguageData, Languages } from '../languages/@types'
 import enUS from 'languages/en-US.json'
 import ptBR from 'languages/pt-BR.json'
 

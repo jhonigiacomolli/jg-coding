@@ -3,13 +3,13 @@ import { Header } from 'components/header'
 import { Profile } from 'components/profile'
 import { Divisor } from 'components/divisors/divisor'
 import { TitleDecorated } from 'components/title/title-decorated'
-import { useLanguageContext } from 'languages/context'
 import { Avatar } from 'components/avatar'
 import { WorksDetach } from 'components/works/works-in-detach'
 import { SkillsDetach } from 'components/skills/skills-in-detach'
 import { DivisorWave } from 'components/divisors/divisor-wave'
 import { Foooter } from 'components/footer'
 import { Copyright } from 'components/copyright'
+import { useLanguageContext } from 'hooks/language'
 
 export function App (): ReactElement {
   const { data } = useLanguageContext()

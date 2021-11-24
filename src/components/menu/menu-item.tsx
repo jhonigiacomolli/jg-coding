@@ -1,15 +1,16 @@
-import { ReactElement } from 'react'
+/* global SVGSVGElement */
+import { FunctionComponent, ReactElement, SVGProps } from 'react'
 import styled, { css } from 'styled-components/macro'
 
 type MenuItemProps = {
     text: string
-    icon?: string
+    icon: FunctionComponent<SVGProps<SVGSVGElement>>
 }
 
-export const MenuItem = ({ text, icon }: MenuItemProps): ReactElement => {
+export const MenuItem = ({ text, icon: Icon }: MenuItemProps): ReactElement => {
   return (
     <ListItem>
-      <Icon src={icon} alt={`${text}-icon`} />
+      <Icon width={35} height={35} />
       <Link>
         {text}
       </Link>
@@ -28,7 +29,4 @@ const Link = styled.a`${({ theme }) => css`
     font-size: 1.25rem;
     font-family: ${theme.fonts.secondary};
     color: ${theme.colors.text100};
-`}`
-const Icon = styled.img`${({ theme }) => css`
-    max-width: ${theme.sizes.icons.width};
 `}`

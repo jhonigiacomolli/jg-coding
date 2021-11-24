@@ -1,8 +1,8 @@
 import { ReactElement } from 'react'
 import SkillsData from 'data/skills.json'
-import { useLanguageContext } from 'languages/context'
 import { Skill } from './skill'
 import styled, { css } from 'styled-components'
+import { useLanguageContext } from 'hooks/language'
 
 export const SkillsDetach = ():ReactElement => {
   const { lang } = useLanguageContext()

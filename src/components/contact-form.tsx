@@ -1,4 +1,4 @@
-import { useLanguageContext } from 'languages/context'
+import { useLanguageContext } from 'hooks/language'
 import styled, { css } from 'styled-components'
 import { Textarea } from './styled-textarea'
 import { Button } from './styled-button'

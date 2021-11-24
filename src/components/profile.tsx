@@ -1,4 +1,4 @@
-import { useLanguageContext } from 'languages/context'
+import { useLanguageContext } from 'hooks/language'
 import { ReactElement } from 'react'
 import styled, { css } from 'styled-components/macro'
 import { Link } from './link'

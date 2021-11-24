@@ -1,21 +1,21 @@
-import { useLanguageContext } from "languages/context";
-import styled, { css } from "styled-components/macro";
-import { ReactElement } from "react";
+import styled, { css } from 'styled-components/macro'
+import { useLanguageContext } from 'hooks/language'
+import { ReactElement } from 'react'
 
 export const Copyright = ():ReactElement => {
-    const { data } = useLanguageContext()
-    return (
-        <Container>
-            <Content>
-                <Text>
-                    { data.copyrightMessage }
-                </Text>
-                <Title>
-                    Jhoni Giacomolli
-                </Title>
-            </Content>
-        </Container>
-    )
+  const { data } = useLanguageContext()
+  return (
+    <Container>
+      <Content>
+        <Text>
+          {data.copyrightMessage}
+        </Text>
+        <Title>
+          Jhoni Giacomolli
+        </Title>
+      </Content>
+    </Container>
+  )
 }
 
 const Container = styled.section`${({ theme }) => css`

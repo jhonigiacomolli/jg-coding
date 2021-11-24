@@ -1,16 +1,23 @@
 import { ThemeProvider, createGlobalStyle } from 'styled-components'
+import { LanguageContextProvider } from 'hooks/language'
+import { BackToTop } from 'components/back-to-top'
+import { ReactElement } from 'react'
 import { theme } from 'theme'
 import { App } from 'app'
-import { LanguageContextProvider } from 'languages/context'
-import { ReactElement } from 'react'
+import { GlobalContextProvider } from 'hooks/global'
+import { Chat } from 'components/chat'
 
 function Root (): ReactElement {
   return (
     <ThemeProvider theme={theme}>
-      <LanguageContextProvider>
-        <GlobalStyle />
-        <App />
-      </LanguageContextProvider>
+      <GlobalContextProvider>
+        <LanguageContextProvider>
+          <GlobalStyle />
+          <App />
+          <BackToTop />
+          <Chat />
+        </LanguageContextProvider>
+      </GlobalContextProvider>
     </ThemeProvider>
   )
 }

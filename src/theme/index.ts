@@ -3,6 +3,7 @@ import { DefaultTheme } from 'styled-components'
 export const theme: DefaultTheme = {
   colors: {
     detach100: '#00FF00',
+    detach100Alpha: '#00FF005e',
     detach90: '#ADFF00',
     primary100: '#09090F',
     primary90: '#0F1115',

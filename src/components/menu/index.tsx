@@ -1,12 +1,12 @@
 import { ReactElement } from 'react'
 import { MenuItem } from './menu-item'
 import styled from 'styled-components/macro'
-import { useLanguageContext } from 'languages/context'
-import HomeIcon from 'assets/icons/home-icon.svg'
-import ProfileIcon from 'assets/icons/profile-icon.svg'
-import WorksIcon from 'assets/icons/works-icon.svg'
-import SkillsIcon from 'assets/icons/skills-icon.svg'
-import ContactIcon from 'assets/icons/contact-icon.svg'
+import { ReactComponent as HomeIcon } from 'assets/icons/home-icon.svg'
+import { ReactComponent as ProfileIcon } from 'assets/icons/profile-icon.svg'
+import { ReactComponent as WorksIcon } from 'assets/icons/works-icon.svg'
+import { ReactComponent as SkillsIcon } from 'assets/icons/skills-icon.svg'
+import { ReactComponent as ContactIcon } from 'assets/icons/contact-icon.svg'
+import { useLanguageContext } from 'hooks/language'
 
 export const MainMenu = (): ReactElement => {
   const { data } = useLanguageContext()

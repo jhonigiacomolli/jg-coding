@@ -1,9 +1,9 @@
 /* global HTMLSelectElement */
 import { ChangeEvent, ReactElement, useEffect, useState } from 'react'
-import { useLanguageContext } from 'languages/context'
 import styled, { css } from 'styled-components/macro'
 import { Option, Select } from './styled-select'
 import { Languages } from 'languages/@types'
+import { useLanguageContext } from 'hooks/language'
 
 export const Topbar = (): ReactElement => {
   const { data, changeLanguage } = useLanguageContext()

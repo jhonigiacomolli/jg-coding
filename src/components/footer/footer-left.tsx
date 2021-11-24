@@ -1,6 +1,6 @@
 import { Link } from 'components/link'
 import { TitleDecorated } from 'components/title/title-decorated'
-import { useLanguageContext } from 'languages/context'
+import { useLanguageContext } from 'hooks/language'
 import { ReactElement } from 'react'
 import styled from 'styled-components'
 
