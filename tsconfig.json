@@ -19,7 +19,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vite-plugin-svgr/client"],
+    "types": ["vite-plugin-svgr/client", "node"],
+    "typeRoots": [ "../node_modules/@types" ],
     "baseUrl": "src"
   },
   "include": [

@@ -3,11 +3,12 @@ import { ReactElement } from 'react'
 import styled, { css } from 'styled-components/macro'
 import { Link } from './link'
 import { Button } from './styled-button'
+import BackgroundImage from 'assets/slide.jpg'
 
 export const Profile = (): ReactElement => {
   const { data } = useLanguageContext()
   return (
-    <Container>
+    <Container image={BackgroundImage}>
       <Content>
         <Subtitle>
           {data.profilePhrase1}
@@ -40,7 +41,7 @@ export const Profile = (): ReactElement => {
   )
 }
 
-const Container = styled.section`${({ theme }) => css`
+const Container = styled.section<{ image: string }>`${({ theme, image }) => css`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +52,7 @@ const Container = styled.section`${({ theme }) => css`
   margin: -390px 0 0 0;
   background-size: cover !important;
   background-position: top;
-  background: linear-gradient(0deg, ${theme.colors.primary90alpha}, ${theme.colors.primary70alpha}), url('/src/assets/slide.jpg');
+  background: linear-gradient(0deg, ${theme.colors.primary90alpha}, ${theme.colors.primary70alpha}), url(${image});
 `}`
 const Content = styled.div`
   max-width: 600px;

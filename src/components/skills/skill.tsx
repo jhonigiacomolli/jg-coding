@@ -7,9 +7,14 @@ type SkillProps = {
 }
 export const Skill = ({ data }:SkillProps):ReactElement => {
   const { icon, title, description } = data
+  const Icon = styled(icon)`
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+  `
   return (
     <Container>
-      <Icon src={icon} alt={title} />
+      <Icon />
       <Title>
         {title}
       </Title>
@@ -31,12 +36,6 @@ const Container = styled.div`${({ theme }) => css`
   border-radius: 1.5rem;
   background: ${theme.colors.primary90};
 `}`
-
-const Icon = styled.img`
-  width: 90px;
-  height: 90px;
-  margin: 0 auto;
-  `
 const Title = styled.h2`${({ theme }) => css`
   text-align: center;
   font-size: 2.2rem;

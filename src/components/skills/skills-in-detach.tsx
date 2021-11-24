@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import SkillsData from 'data/skills.json'
+import { skills as SkillsData } from 'data/skills'
 import { Skill } from './skill'
 import styled, { css } from 'styled-components'
 import { useLanguageContext } from 'hooks/language'

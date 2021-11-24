@@ -1,3 +1,6 @@
+/* global SVGSVGElement */
+import { FunctionComponent, SVGProps } from 'react'
+
 export type DevicesProps = 'mobile' | 'desktop'
 
 export type WorksProps = {
@@ -11,7 +14,7 @@ export type WorksProps = {
 }
 
 export type SkillsProps = {
-    icon: string
+    icon: FunctionComponent<SVGProps<SVGSVGElement>>
     title: string
     description: string
 }
