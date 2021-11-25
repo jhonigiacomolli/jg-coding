@@ -30,6 +30,12 @@ const Container = styled.div<ContainerProps>`${({ position }) => css`
     margin-top: ${position > 5 ? '-70px' : '0px'};
     margin-bottom: -70px;
     transition: height 0.6s;
+    z-index: 999;
+
+    @media(max-width: 991px) {
+      width: ${position > 5 ? '60px' : '0px'};
+      transform: scale(0.8);
+    }
 `}`
 
 const Icon = styled(BackToTopIcon)`

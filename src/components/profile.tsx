@@ -48,11 +48,16 @@ const Container = styled.section<{ image: string }>`${({ theme, image }) => css`
   position: relative;
   z-index: 0;
   width: 100vw;
-  height: calc(100vw * 0.80);
+  height: 1200px;
   margin: -390px 0 0 0;
   background-size: cover !important;
   background-position: top;
   background: linear-gradient(0deg, ${theme.colors.primary90alpha}, ${theme.colors.primary70alpha}), url(${image});
+
+  @media(max-width: 991px) {
+    height: 1100px;
+    margin: -340px 0 0 0;
+  }
 `}`
 const Content = styled.div`
   max-width: 600px;

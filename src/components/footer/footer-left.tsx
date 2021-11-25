@@ -63,6 +63,12 @@ align-items: flex-end;
 `
 const Title = styled(TitleDecorated)`
     margin: -120px 0 50px 0;
+
+    @media(max-width: 991px) {
+      width: 280px;
+      margin: 0 0 50px 0;
+      font-size: 1rem;
+    }
 `
 const Content = styled.div`
     margin: 0 0 0 75px;

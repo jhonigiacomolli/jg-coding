@@ -35,6 +35,10 @@ const TabletScreen = styled(SVG)`
   margin: -300px 0 100px 0;
   position: absolute;
   z-index: -1;
+  
+  @media(max-width: 1199px) {
+    max-width: 430px;
+  }
 `
 
 const Container = styled.div`
@@ -47,4 +51,8 @@ const Container = styled.div`
   justify-content: center;
   margin: 0 auto;
   padding: 30px;
+
+  @media(max-width: 1199px) {
+    max-width: 400px;
+  }
 `

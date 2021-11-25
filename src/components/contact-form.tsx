@@ -32,12 +32,21 @@ const Form = styled.form`
     justify-content: center;
     gap: 2rem;
     margin: -300px 0 100px 0;
+
+    @media(max-width: 1199px) {
+      gap: 0.5rem;
+    }
 `
 
 const Title = styled.h2`${({ theme }) => css`
     font-size: 3rem;
     font-family: ${theme.fonts.secondary};
     color: ${theme.colors.detach100};
+
+    @media(max-width: 1199px) {
+      font-size: 2.5rem;
+      margin: 5px 0;
+    }
 `}`
 
 const ContactButton = styled(Button)`

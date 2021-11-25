@@ -35,4 +35,8 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media(max-width: 991px) {
+      margin-top: 100px;
+    }
 `

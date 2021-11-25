@@ -8,4 +8,8 @@ export const Input = styled.input`${({ theme }) => css`
     color: ${theme.colors.text80};
     height: ${theme.sizes.inputHeight};
     background: ${theme.colors.primary90};
+
+    @media(max-width: 1199px) {
+        padding: 5px 15px;
+    }
 `}`

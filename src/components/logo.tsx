@@ -73,4 +73,9 @@ const Logomarca = styled.svg`
     grid-area: logo;
     max-width: 350px;
     margin: 0 auto;
+
+    @media(max-width: 767px) {
+      max-width: 250px;
+      margin-left: 30px;
+    }
 `

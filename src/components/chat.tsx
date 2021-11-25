@@ -25,6 +25,13 @@ const Container = styled.div<ContainerProps>`${({ position }) => css`
     width: 90px;
     height: 80px;
     transition: 0.6s;
+    z-index: 999;
+
+    @media(max-width: 991px) {
+      bottom: ${position > 5 ? '70px' : '0'};
+      width: 60px;
+      transform: scale(0.8);
+    }
 `}`
 const Content = styled.a`${({ theme }) => css`
     display: flex;
