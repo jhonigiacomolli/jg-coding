@@ -56,11 +56,15 @@ const Container = styled.div<{ width?: number }>`
   margin: -250px auto 130px auto;
   position: relative;
   width: ${({ width }) => `${width}px`};
-  z-index: 19;
+  z-index: 0;
 
   @media(max-width: 991px) {
-    width: ${({ width }) => `${width ? width * 0.8 : 280}px`};
-    margin: -125px auto 20px auto;
+    transform: scale(0.8);
+    margin: -135px auto 0px auto;
+  }
+  @media(max-width: 480px) {
+    transform: scale(0.6);
+    margin: -135px auto 0px auto;
   }
 `
 const Content = styled.div<{ isIcon?: boolean }>`${({ isIcon }) => css`
@@ -73,11 +77,6 @@ const Content = styled.div<{ isIcon?: boolean }>`${({ isIcon }) => css`
   margin:  ${isIcon ? '-215px 0 0 0' : '-105px 0 0 0'};
   padding: 0 10px;
   gap: 20px;
-
-    
-  @media(max-width: 991px) {
-    margin:  ${isIcon ? '-200px 0 0 0' : '-90px 0 0 0'};
-  }
 `}`
 const Icon = styled.div`
   margin: 12px 0 -12px 0  ;
@@ -97,10 +96,6 @@ const Title = styled.h1`${({ theme }) => css`
   font-family: ${theme.fonts.secondary};
   font-size: ${theme.sizes.title};
   color: ${theme.colors.detach100};
-
-  @media(max-width: 991px) {
-    transform: scale(0.8);
-  }
 `}`
 
 const Subtitle = styled.h2`${({ theme }) => css`

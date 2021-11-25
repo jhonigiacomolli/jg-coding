@@ -12,4 +12,7 @@ export const Input = styled.input`${({ theme }) => css`
     @media(max-width: 1199px) {
         padding: 5px 15px;
     }
+    @media(max-width: 480px) {
+        padding: 0 15px;
+    }
 `}`

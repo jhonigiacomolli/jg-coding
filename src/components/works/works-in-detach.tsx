@@ -17,6 +17,7 @@ export const WorksDetach = ({ numberItens }:WorksDetachProps):ReactElement => {
         worksData[lang].map((work, index) => (
           index < numberItens && (
             <Work
+              key={`${work.section}-${index}`}
               data={work as WorksProps}
               orientation={index % 2 === 0 ? 'left' : 'right'}
             />

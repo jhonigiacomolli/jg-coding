@@ -75,4 +75,8 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    @media(max-width: 480px){
+      margin: 0 auto;
+    }
 `

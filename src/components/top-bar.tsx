@@ -36,6 +36,7 @@ export const Topbar = (): ReactElement => {
 }
 
 const Container = styled.div`${({ theme }) => css`
+  width: 100%;
   grid-area: topbar;
   background: ${theme.colors.primary80};
 `}`

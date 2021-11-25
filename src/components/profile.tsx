@@ -67,6 +67,10 @@ const Content = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 100px;
+
+  @media(max-width: 767px) {
+    padding: 0 15px;
+  }
 `
 const Title = styled.h1`${({ theme }) => css`
   width: 100%;

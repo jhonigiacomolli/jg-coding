@@ -30,11 +30,18 @@ const Content = styled.div`${({ theme }) => css`
     padding: 50px 0;
     width: 100%;
     border-top: 2px solid ${theme.colors.primary70};
+
+    @media(max-width: 767px) {
+      flex-direction: column;
+    }
 `}`
 const Text = styled.p`${({ theme }) => css`
     font-size: 1.6rem;
     margin: 0;
     color: ${theme.colors.text90};
+    @media(max-width: 767px) {
+      text-align: center;
+    }
 `}`
 const Title = styled.span`${({ theme }) => css`
     font-size: 1.6rem;

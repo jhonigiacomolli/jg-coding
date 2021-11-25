@@ -77,5 +77,6 @@ const Logomarca = styled.svg`
     @media(max-width: 767px) {
       max-width: 250px;
       margin-left: 30px;
+      width: 100%;
     }
 `

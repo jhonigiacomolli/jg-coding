@@ -1,15 +1,16 @@
 /* global SVGSVGElement */
-import { FunctionComponent, ReactElement, SVGProps } from 'react'
+/* global HTMLLIElement */
+import { FunctionComponent, HTMLAttributes, ReactElement, SVGProps } from 'react'
 import styled, { css } from 'styled-components/macro'
 
-type MenuItemProps = {
+type MenuItemProps = HTMLAttributes<HTMLLIElement> & {
     text: string
     icon: FunctionComponent<SVGProps<SVGSVGElement>>
 }
 
-export const MenuItem = ({ text, icon: Icon }: MenuItemProps): ReactElement => {
+export const MenuItem = ({ text, icon: Icon, ...rest }: MenuItemProps): ReactElement => {
   return (
-    <ListItem>
+    <ListItem {...rest}>
       <Icon width={35} height={35} />
       <Link>
         {text}

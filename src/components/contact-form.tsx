@@ -36,6 +36,12 @@ const Form = styled.form`
     @media(max-width: 1199px) {
       gap: 0.5rem;
     }
+    @media(max-width: 991px) {
+      max-width: 280px;
+    }
+    @media(max-width: 480px) {
+      max-width: 250px;
+    }
 `
 
 const Title = styled.h2`${({ theme }) => css`
