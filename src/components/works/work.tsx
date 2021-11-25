@@ -20,12 +20,18 @@ export const Work = ({ data, orientation = 'left' }:WorkProps):ReactElement => {
 }
 
 const Container = styled.div<{position: 'right' | 'left'}>`${({ position }) => css`
+    width: 100%;
     display: flex;
     flex-direction: ${position === 'left' ? 'row' : 'row-reverse'};
     align-items: flex-start;
     justify-content: center;
     gap: 100px;
     margin: 15px 0;
+    @media(max-width: 991px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
 `}`
 
 const Timeline = styled.div`${({ theme }) => css`
@@ -45,5 +51,11 @@ const Timeline = styled.div`${({ theme }) => css`
         border-radius: 50%;
         border: 0.6rem solid ${theme.colors.primary80};
         background: ${theme.colors.detach100};
+    }
+    @media(max-width: 991px) {
+      order: 3;
+      height: 100px;
+      width: 2px;
+      margin: 10px 0 0  0;
     }
 `}`

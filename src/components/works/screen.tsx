@@ -31,10 +31,23 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     contain: content;
+
+    @media(max-width: 1199px) {
+      width: 35rem;
+      height: 235px;
+    }
+    @media(max-width: 991px) {
+      margin: -40px 0 0 -20px;
+    }
 `
 const Image = styled.img`
     width: 28rem;
     margin: -52px -18px 20px 17px;
+    
+    @media(max-width: 1199px) {
+      width: 22rem;
+      margin: -30px -10px 20px 17px;
+    }
 `
 
 const DesktopSVG = ({ ...rest }: SVGProps<SVGSVGElement>): ReactElement => {

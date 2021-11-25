@@ -54,9 +54,19 @@ const Container = styled.div<{ arrowPosition?: 'right' | 'left' }>`${({ theme, a
         z-index: -1;
         background: ${theme.colors.primary80};
     }
+    @media(max-width: 1199px) {
+      max-width: 35rem;
+    }
+    @media(max-width: 991px) {
+      margin: -30px 0 0 0;
+      &::before {
+        display: none;
+      }
+    }
 `}`
 
 const Content = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -67,6 +77,10 @@ const SectionTitle = styled.span`${({ theme }) => css`
     font-size: 1.8rem;
     font-family: ${theme.fonts.secondary};
     color: ${theme.colors.text80};
+
+    @media(max-width: 1199px) {
+      font-size: 1.4rem;
+    }
 `}`
 
 const Title = styled.h2`${({ theme }) => css`
@@ -74,6 +88,10 @@ const Title = styled.h2`${({ theme }) => css`
     margin: 5px 0;
     font-family: ${theme.fonts.secondary};
     color: ${theme.colors.detach100};
+
+    @media(max-width: 1199px) {
+      font-size: 2rem;
+    }
 `}`
 
 const Description = styled.p`${({ theme }) => css`
@@ -93,6 +111,10 @@ const Link = styled.a`${({ theme }) => css`
     text-decoration: none;
     font-family: ${theme.fonts.secondary};
     color: ${theme.colors.text100};
+    
+    @media(max-width: 1199px) {
+      font-size: 1.4rem;
+    }
 `}`
 
 const Icon = styled.img`

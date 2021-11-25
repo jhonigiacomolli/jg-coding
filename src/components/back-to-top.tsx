@@ -29,10 +29,11 @@ const Container = styled.div<ContainerProps>`${({ position }) => css`
     height: ${position > 5 ? '70px' : '0px'};
     margin-top: ${position > 5 ? '-70px' : '0px'};
     margin-bottom: -70px;
+    transition: height 0.6s;
 `}`
 
 const Icon = styled(BackToTopIcon)`
-    width: 55px;
+    width: 50px;
     height: 35px;
     cursor: pointer;
 `

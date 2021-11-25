@@ -5,11 +5,10 @@ import { useGlobalContext } from 'hooks/global'
 
 export const Chat = ():ReactElement => {
   const { position } = useGlobalContext()
-  console.log(position)
 
   return (
     <Container position={position}>
-      <Content>
+      <Content href='https://wa.me/5549988017702' target='_blank' rel='noopener noreferrer'>
         <Icon />
       </Content>
     </Container>
@@ -25,13 +24,14 @@ const Container = styled.div<ContainerProps>`${({ position }) => css`
     left: 100vw;
     width: 90px;
     height: 80px;
+    transition: 0.6s;
 `}`
-const Content = styled.div`${({ theme }) => css`
+const Content = styled.a`${({ theme }) => css`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: ${theme.colors.detach100};
     outline: 6px solid ${theme.colors.detach100Alpha};
@@ -39,8 +39,8 @@ const Content = styled.div`${({ theme }) => css`
 `}`
 
 const Icon = styled(SVG)`${({ theme }) => css`
-    width: 55px;
-    height: 35px;
+    width: 40px;
+    height: 30px;
     cursor: pointer;
     & path {
         fill: ${theme.colors.text10};
