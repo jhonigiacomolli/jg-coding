@@ -7,7 +7,7 @@ import { useLanguageContext } from 'hooks/language'
 export const SkillsDetach = ():ReactElement => {
   const { lang } = useLanguageContext()
   return (
-    <Container>
+    <Container id='skills'>
       <Content>
         {
                     SkillsData[lang].map(skill => (

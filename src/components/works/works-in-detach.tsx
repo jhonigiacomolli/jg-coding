@@ -5,14 +5,21 @@ import { Button } from 'components/styled-button'
 import styled from 'styled-components/macro'
 import { works as worksData } from 'data/works'
 import { useLanguageContext } from 'hooks/language'
+import { useNavigate } from 'react-router-dom'
 
 type WorksDetachProps = {
     numberItens: number
 }
 export const WorksDetach = ({ numberItens }:WorksDetachProps):ReactElement => {
   const { lang, data } = useLanguageContext()
+  const navigate = useNavigate()
+
+  const handleNavigate = () => {
+    navigate('portfolio')
+  }
+
   return (
-    <Container>
+    <Container id='works'>
       {
         worksData[lang].map((work, index) => (
           index < numberItens && (
@@ -24,7 +31,7 @@ export const WorksDetach = ({ numberItens }:WorksDetachProps):ReactElement => {
           )
         ))
       }
-      <Button>
+      <Button onClick={handleNavigate}>
         {data.worksButton}
       </Button>
     </Container>

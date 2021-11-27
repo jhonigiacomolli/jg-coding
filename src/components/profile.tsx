@@ -2,12 +2,13 @@ import { useLanguageContext } from 'hooks/language'
 import { ReactElement } from 'react'
 import styled, { css } from 'styled-components/macro'
 import { Link } from './link'
-import { Button } from './styled-button'
+import { ButtonLink } from './styled-button'
 
 export const Profile = (): ReactElement => {
   const { data } = useLanguageContext()
+
   return (
-    <Content>
+    <Content id='profile'>
       <Subtitle>
         {data.profilePhrase1}
       </Subtitle>
@@ -31,9 +32,9 @@ export const Profile = (): ReactElement => {
         target='_blank'
         rel='noopener noreferrer'
       />
-      <Button>
+      <ButtonLink href='#contact'>
         {data.profileButton}
-      </Button>
+      </ButtonLink>
     </Content>
   )
 }
@@ -45,6 +46,8 @@ const Content = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 100px;
+  position: relative;
+  z-index: 999;
 
   @media(max-width: 767px) {
     padding: 0 15px;

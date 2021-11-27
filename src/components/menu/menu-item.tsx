@@ -6,13 +6,14 @@ import styled, { css } from 'styled-components/macro'
 type MenuItemProps = HTMLAttributes<HTMLLIElement> & {
     text: string
     icon: FunctionComponent<SVGProps<SVGSVGElement>>
+    href: string;
 }
 
-export const MenuItem = ({ text, icon: Icon, ...rest }: MenuItemProps): ReactElement => {
+export const MenuItem = ({ text, icon: Icon, href, ...rest }: MenuItemProps): ReactElement => {
   return (
     <ListItem {...rest}>
       <Icon width={35} height={35} />
-      <Link>
+      <Link href={href}>
         {text}
       </Link>
     </ListItem>
@@ -27,6 +28,7 @@ const ListItem = styled.li`
 `
 const Link = styled.a`${({ theme }) => css`
     text-transform: uppercase;
+    text-decoration: none;
     font-size: 1.25rem;
     font-family: ${theme.fonts.secondary};
     color: ${theme.colors.text100};

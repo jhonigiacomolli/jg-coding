@@ -39,6 +39,8 @@ const Container = styled.div`${({ theme }) => css`
   width: 100%;
   grid-area: topbar;
   background: ${theme.colors.primary80};
+  position: relative;
+  z-index: 1;
 `}`
 
 const Content = styled.div`${({ theme }) => css`

@@ -19,11 +19,11 @@ export const MainMenu = (): ReactElement => {
   return (
     <Navegation toggle={toggle}>
       <Menu toggle={toggle}>
-        <MenuItem text={data.menuOption1} icon={HomeIcon} onClick={handleToggle} />
-        <MenuItem text={data.menuOption2} icon={ProfileIcon} onClick={handleToggle} />
-        <MenuItem text={data.menuOption3} icon={WorksIcon} onClick={handleToggle} />
-        <MenuItem text={data.menuOption4} icon={SkillsIcon} onClick={handleToggle} />
-        <MenuItem text={data.menuOption5} icon={ContactIcon} onClick={handleToggle} />
+        <MenuItem text={data.menuOption1} icon={HomeIcon} href='/' onClick={handleToggle} />
+        <MenuItem text={data.menuOption2} icon={ProfileIcon} href='#profile' onClick={handleToggle} />
+        <MenuItem text={data.menuOption3} icon={WorksIcon} href='#works' onClick={handleToggle} />
+        <MenuItem text={data.menuOption4} icon={SkillsIcon} href='#skills' onClick={handleToggle} />
+        <MenuItem text={data.menuOption5} icon={ContactIcon} href='#contact' onClick={handleToggle} />
       </Menu>
       <Toggle state={toggle} onClick={handleToggle} />
     </Navegation>
@@ -36,6 +36,8 @@ const Navegation = styled.nav<{ toggle: boolean }>` ${({ toggle }) => css`
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 
     @media(max-width: 767px) {
       justify-content: flex-end;

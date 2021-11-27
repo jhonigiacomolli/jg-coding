@@ -19,7 +19,7 @@ export const Header = (): ReactElement => {
       <Background image={BackgroundImage} pathname={pathname}>
         {
           pathname === '/'
-            ? <Profile />
+            ? <Content />
             : null
         }
       </Background>
@@ -34,7 +34,6 @@ const Background = styled.section<{ image: string, pathname: string }>`${({ them
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: -1;
   width: 100vw;
   height: ${`${pathname === '/' ? 1200 : 700}px`};
   margin: -390px 0 0 0;
@@ -51,6 +50,9 @@ const Background = styled.section<{ image: string, pathname: string }>`${({ them
     margin: -340px 0 0 0;
   }
 `}`
+const Content = styled(Profile)`
+  z-index: 99;
+`
 
 const HeaderDivisor = styled(Divisor)`
   grid-area: divisor;

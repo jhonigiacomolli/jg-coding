@@ -6,7 +6,7 @@ import styled from 'styled-components/macro'
 export const FooterRight = ():ReactElement => {
   return (
     <Container>
-      <TabletScreen />
+      <TabletScreen id='contact' />
       <ContactForm />
     </Container>
   )
