@@ -56,7 +56,7 @@ const Container = styled.div<{ width?: number }>`
   margin: -250px auto 130px auto;
   position: relative;
   width: ${({ width }) => `${width}px`};
-  z-index: 0;
+  z-index: 1;
 
   @media(max-width: 991px) {
     transform: scale(0.8);

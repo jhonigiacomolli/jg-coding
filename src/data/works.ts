@@ -1,8 +1,13 @@
 import Work1 from 'assets/works/work1.png'
 import Work2 from 'assets/works/work2.png'
 import Work3 from 'assets/works/work3.png'
+import { WorksProps } from './types'
 
-export const works = {
+type Works = {
+  'en-US': WorksProps[]
+  'pt-BR': WorksProps[]
+}
+export const works:Works = {
   'en-US': [
     {
       section: 'website',

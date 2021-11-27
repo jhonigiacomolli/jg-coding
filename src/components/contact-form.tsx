@@ -31,13 +31,17 @@ const Form = styled.form`
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin: -300px 0 100px 0;
+    margin: -300px 0  100px 0;
 
     @media(max-width: 1199px) {
       gap: 0.5rem;
+      margin: -300px 0  200px 0;
     }
     @media(max-width: 991px) {
       max-width: 280px;
+    }
+    @media(max-width: 767px) {
+      margin: -300px 0  100px 0;
     }
     @media(max-width: 480px) {
       max-width: 250px;

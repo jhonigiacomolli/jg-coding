@@ -1,15 +1,19 @@
+import { Copyright } from 'components/copyright'
+import { DivisorWave } from 'components/divisors/divisor-wave'
 import { ReactElement } from 'react'
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components/macro'
 import { FooterLeft } from './footer-left'
 import { FooterRight } from './footer-right'
 
 export const Foooter = ():ReactElement => {
   return (
     <Container>
+      <DivisorWave overlap='both' />
       <Content>
         <FooterLeft />
         <FooterRight />
       </Content>
+      <Copyright />
     </Container>
   )
 }

@@ -1,31 +1,42 @@
+import { ThemeProvider, createGlobalStyle } from 'styled-components'
+import { LanguageContextProvider } from 'hooks/language'
 import { ReactElement } from 'react'
-import { Header } from 'components/header'
-import { Profile } from 'components/profile'
-import { Divisor } from 'components/divisors/divisor'
-import { TitleDecorated } from 'components/title/title-decorated'
-import { Avatar } from 'components/avatar'
-import { WorksDetach } from 'components/works/works-in-detach'
-import { SkillsDetach } from 'components/skills/skills-in-detach'
-import { DivisorWave } from 'components/divisors/divisor-wave'
-import { Foooter } from 'components/footer'
-import { Copyright } from 'components/copyright'
-import { useLanguageContext } from 'hooks/language'
+import { theme } from 'theme'
+import { GlobalContextProvider } from 'hooks/global'
+import { Root } from 'root'
 
-export function App (): ReactElement {
-  const { data } = useLanguageContext()
+export const App = (): ReactElement => {
   return (
-    <>
-      <Header />
-      <Profile />
-      <Divisor overlap='top' />
-      <TitleDecorated text={data.titleWorks} icon={<Avatar />} width={400} />
-      <WorksDetach numberItens={3} />
-      <Divisor position='right' kind='secondary' />
-      <TitleDecorated text={data.titleSkills} width={350} position='right' />
-      <SkillsDetach />
-      <DivisorWave overlap='both' />
-      <Foooter />
-      <Copyright />
-    </>
+    <ThemeProvider theme={theme}>
+      <GlobalContextProvider>
+        <LanguageContextProvider>
+          <GlobalStyle />
+          <Root />
+        </LanguageContextProvider>
+      </GlobalContextProvider>
+    </ThemeProvider>
   )
 }
+
+const GlobalStyle = createGlobalStyle`
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+            sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: ${({ theme }) => theme.colors.primary70};
+    }
+`

@@ -38,10 +38,12 @@ const TabletScreen = styled(SVG)`
   
   @media(max-width: 1199px) {
     max-width: 430px;
+    margin: -300px 0 200px 0;
   }
   @media(max-width: 767px) {
     max-width: 350px;
     height: 650px;
+    margin: -300px 0 100px 0;
   }
   @media(max-width: 480px) {
     max-width: 300px;

@@ -18,7 +18,7 @@ export const Copyright = ():ReactElement => {
   )
 }
 
-const Container = styled.section`${({ theme }) => css`
+const Container = styled.div`${({ theme }) => css`
     background: ${theme.colors.primary90};
 `}`
 const Content = styled.div`${({ theme }) => css`
