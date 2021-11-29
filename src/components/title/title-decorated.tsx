@@ -59,17 +59,18 @@ const Container = styled.div<{ width?: number }>`
   z-index: 1;
 
   @media(max-width: 991px) {
+    width: 300px;
     transform: scale(0.8);
-    margin: -135px auto 0px auto;
+    margin: -135px auto 30px auto;
   }
   @media(max-width: 480px) {
     transform: scale(0.6);
-    margin: -135px auto 0px auto;
   }
 `
 const Content = styled.div<{ isIcon?: boolean }>`${({ isIcon }) => css`
   width: 100%;
   display: flex;  
+  flex-direction: row-reverse;
   position: relative;
   z-index: 10;
   align-items: flex-end;
@@ -77,9 +78,12 @@ const Content = styled.div<{ isIcon?: boolean }>`${({ isIcon }) => css`
   margin:  ${isIcon ? '-215px 0 0 0' : '-105px 0 0 0'};
   padding: 0 10px;
   gap: 20px;
+  @media(max-width: 991px) {
+    margin:  ${isIcon ? '-215px -70px 0 0' : '-100px 0 0 30px'};
+  }
 `}`
 const Icon = styled.div`
-  margin: 12px 0 -12px 0  ;
+  margin: 12px 25px -12px -25px  ;
 `
 
 const TextContent = styled.div`

@@ -8,6 +8,7 @@ export const Button = styled.button`${({ theme }) => css`
     border-radius: 8px;
     font-size: 1.5rem;
     font-weight: 600;
+    cursor: pointer;
     font-family: ${theme.fonts.secondary};
     color: ${theme.colors.text10};
     background: ${theme.colors.detach100};

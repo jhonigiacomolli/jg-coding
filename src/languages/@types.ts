@@ -25,4 +25,6 @@ export type LanguageData = {
     contactInputMessage: string
     contactButton: string
     copyrightMessage: string
+    portfolioPageTitle: string
+    portfolioPageDescription: string
 }

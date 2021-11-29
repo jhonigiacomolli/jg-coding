@@ -22,6 +22,8 @@ const Container = styled.div<ToggleProps>`${({ state }) => css`
     width: 0;
     height: 0;
     opacity: 0;
+    z-index: 99;
+    position: relative;
     
     @media(max-width: 767px) {
         width: 70px;

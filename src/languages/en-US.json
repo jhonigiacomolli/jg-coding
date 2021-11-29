@@ -22,5 +22,7 @@
     "contactInputSubject": "Subject",
     "contactInputMessage": "Message",
     "contactButton": "Send",
-    "copyrightMessage": "Copyright 2021 - All rights reserved - developed by"
+    "copyrightMessage": "Copyright 2021 - All rights reserved - developed by",
+    "portfolioPageTitle": "Full Portfolio",
+    "portfolioPageDescription": "Below you can check out all the work I've done throughout my journey as a developer, including works from Wordpress to apps in React.js and Next.js, ranked newest to oldest."
 }

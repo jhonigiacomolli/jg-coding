@@ -22,5 +22,7 @@
     "contactInputSubject": "Assunto",
     "contactInputMessage": "Mensagem",
     "contactButton": "Enviar",
-    "copyrightMessage": "Direito Autoral 2021 - Todos os direitos reservados - Desenvolvido por"
+    "copyrightMessage": "Direito Autoral 2021 - Todos os direitos reservados - Desenvolvido por",
+    "portfolioPageTitle": "Portfólio Completo",
+    "portfolioPageDescription": "Abaixo você pode conferir todo o trabalho que fiz ao longo de minha jornada como desenvolvedor, incluindo trabalhos de Wordpress a aplicativos em React.js e Next.js, classificados do mais novo ao mais antigo."
 }

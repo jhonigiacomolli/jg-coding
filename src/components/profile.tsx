@@ -47,7 +47,7 @@ const Content = styled.div`
   justify-content: center;
   padding: 0 100px;
   position: relative;
-  z-index: 999;
+  z-index: 19;
 
   @media(max-width: 767px) {
     padding: 0 15px;

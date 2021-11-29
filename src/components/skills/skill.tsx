@@ -11,6 +11,10 @@ export const Skill = ({ data }:SkillProps):ReactElement => {
     width: 80px;
     height: 80px;
     margin: 0 auto;
+    @media(max-width: 767px) {
+      width: 65px;
+      height: 65px;
+    }
   `
   return (
     <Container>

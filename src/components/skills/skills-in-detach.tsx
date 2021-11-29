@@ -34,4 +34,8 @@ const Content = styled.div`${({ theme }) => css`
     gap: 20px;
     padding: 50px 30px 170px 30px;
     box-sizing: border-box;
+    @media(max-width: 680px) {
+      grid-template-columns: 1fr;
+      padding: 50px 50px 170px 50px;
+    }
 `}`

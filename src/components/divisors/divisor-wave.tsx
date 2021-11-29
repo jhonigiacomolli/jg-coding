@@ -21,7 +21,16 @@ export const DivisorWave = styled(SVG)`${({ overlap, theme }) => css`
         fill: ${theme.colors.primary90};
     }
 
+    @media(max-width: 1199px) {
+      margin-bottom: ${overlap === 'both' ? '-125px' : (overlap === 'bottom' ? '-485px' : '0px')};
+    }
     @media(max-width: 991px) {
-      margin-bottom: ${overlap === 'both' ? '-75px' : (overlap === 'bottom' ? '-485px' : '0px')};
+      margin-bottom: ${overlap === 'both' ? '-35px' : (overlap === 'bottom' ? '-485px' : '0px')};
+    }
+    @media(max-width: 767px) {
+      margin-bottom: ${overlap === 'both' ? '-10px' : (overlap === 'bottom' ? '-485px' : '0px')};
+    }
+    @media(max-width: 480px) {
+      margin-bottom: ${overlap === 'both' ? '10px' : (overlap === 'bottom' ? '-485px' : '0px')};
     }
 `}`
