@@ -5,17 +5,22 @@ import { MainMenu } from './menu'
 import { Topbar } from './top-bar'
 import BackgroundImage from 'assets/slide.jpg'
 import { Divisor } from './divisors/divisor'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { Profile } from './profile'
 
 export const Header = (): ReactElement => {
   const { pathname } = useLocation()
+  const navigate = useNavigate()
+
+  const handleGoHome = () => {
+    navigate('/')
+  }
 
   return (
     <HeaderContainer>
       <Topbar />
       <MainMenu />
-      <Logo />
+      <Logo onClick={handleGoHome} />
       <Background image={BackgroundImage} pathname={pathname}>
         {
           pathname === '/'

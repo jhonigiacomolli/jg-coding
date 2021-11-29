@@ -61,7 +61,7 @@ const Container = styled.div<{ width?: number }>`
   @media(max-width: 991px) {
     width: 300px;
     transform: scale(0.8);
-    margin: -135px auto 30px auto;
+    margin: -115px auto 10px auto;
   }
   @media(max-width: 480px) {
     transform: scale(0.6);
@@ -79,7 +79,7 @@ const Content = styled.div<{ isIcon?: boolean }>`${({ isIcon }) => css`
   padding: 0 10px;
   gap: 20px;
   @media(max-width: 991px) {
-    margin:  ${isIcon ? '-215px -70px 0 0' : '-100px 0 0 30px'};
+    margin:  ${isIcon ? '-185px -70px 0 0' : '-100px 0 0 30px'};
   }
 `}`
 const Icon = styled.div`

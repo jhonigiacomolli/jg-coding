@@ -2,17 +2,22 @@ import { TitleDecorated } from 'components/title/title-decorated'
 import { Work } from 'components/works/work'
 import { works } from 'data/works'
 import { useLanguageContext } from 'hooks/language'
-import { ReactElement } from 'react'
+import { ReactElement, useEffect } from 'react'
 import styled, { css } from 'styled-components/macro'
 
 export const Portfolio = ():ReactElement => {
   const { lang, data } = useLanguageContext()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <Container>
       <Content>
         <Title text={data.portfolioPageTitle} width={350} position='right' />
         <Description>
-          { data.portfolioPageDescription }
+          {data.portfolioPageDescription}
         </Description>
         {
                     works[lang].map((work, index) => (
