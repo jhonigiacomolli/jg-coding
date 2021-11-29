@@ -78,7 +78,6 @@ const HeaderContainer = styled.header`
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 1;
 
     @media(max-width: 767px) {
       grid-template-columns: 1fr 1fr;
