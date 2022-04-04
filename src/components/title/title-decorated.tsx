@@ -99,6 +99,7 @@ const Title = styled.h1`${({ theme }) => css`
   margin: -5px 0;
   font-family: ${theme.fonts.secondary};
   font-size: ${theme.sizes.title};
+  -webkit-background-clip: text;
   color: ${theme.colors.detach100};
 `}`
 
